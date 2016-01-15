@@ -1,0 +1,41 @@
+
+.btn {
+	background: @red;
+	text-align: center;
+	border-radius: 0px;
+	line-height: 1.1;
+	color: #fff;
+	text-shadow: none;
+	text-transform: uppercase;
+	transition: background 0.2s;
+	&:extend(.font-myriadpro-bold);
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		color: #fff;
+	}
+	&:hover {
+		background: darken(@red, 3%);
+	}
+	&:active {
+		background: darken(@red, 10%);
+	}
+	&-lg {
+		height: 60px;
+		min-width: 310px;
+		padding: 20px 20px;
+		font-size: 18px;
+	}
+	&-border {
+		background: transparent;
+		border: 1px solid @red;
+		color: @black;
+		&:hover,
+		&:active,
+		&:focus {
+			background: @red;
+			color: @white;
+		}
+	}
+}

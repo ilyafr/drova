@@ -1,0 +1,216 @@
+
+.socialnet {
+	padding: 52px 0px 68px;
+	h2,
+	&__title {
+		&:extend(.h1);
+		color: @base-color;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	h3,
+	&__subtitle {
+		font-size: 18px;
+		text-align: center;
+		&:extend(.font-myriadpro-italic);
+		color: @red;
+		text-transform: none;
+		margin-bottom: 40px;
+	}
+	&__text {
+		&,
+		& p {
+			font-size: 16px;
+		}
+	}
+	&__btns {
+		margin: 0px;
+		margin: 0px 0px 0px;
+		text-align: center;
+		.btn {
+			margin: 0px;
+		}
+	}
+	&.active {
+		.socialnet__item {
+			.socialnet__item-img {
+				img {
+					animation-iteration-count: 1;
+					animation-fill-mode: backwards;
+					opacity: 1.0;
+				}
+			}
+			&--1 {
+				.socialnet__item-img {
+					img {
+						animation: socialnet-animate-1 2s;
+					}
+				}
+			}
+			&--2 {
+				.socialnet__item-img {
+					img {
+						animation: socialnet-animate-2 2s;
+					}
+				}
+			}
+			&--3 {
+				.socialnet__item-img {
+					img {
+						animation: socialnet-animate-3 2s;
+					}
+				}
+			}
+		}
+	}
+	&__item {
+		max-width: 310px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 38px;
+		&--left {
+			margin-left: 0px;
+		}
+		&--right {
+			margin-right: 0px;
+		}
+		&-img {
+			background: @black;
+			overflow: hidden;
+			display: block;
+			position: relative;
+			margin-bottom: 20px;
+			.decorate {
+				overflow: hidden;
+				&,
+				& img {
+					display: block;
+					position: relative;
+				}
+				& img {
+					opacity: 0.15;
+					z-index: 1;
+				}
+				&:after {
+					&:extend(.pseudo);
+					border-width: 32px 155px;
+					border-color: transparent transparent @white @white;
+					bottom: 0px;
+					right: 31%;
+					z-index: 10;
+				}
+				&:before {
+					&:extend(.pseudo);
+					border-width: 32px 155px;
+					border-color: transparent @white @white transparent;
+					bottom: 0px;
+					left: 69%;
+					z-index: 10;
+				}
+			}
+			&:after {
+				&:extend(.pseudo);
+				border-width: 32px 155px;
+				border-color: @white transparent transparent @white;
+				top: 0px;
+				right: 69%;
+				z-index: 10;
+			}
+			&:before {
+				&:extend(.pseudo);
+				border-width: 32px 155px;
+				border-color: @white @white transparent transparent;
+				top: 0px;
+				left: 31%;
+				z-index: 10;
+			}
+		}
+	}
+	&__text {
+		&-icon {
+			display: block;
+			position: relative;
+			top: 3px;
+			margin-bottom: 20px;
+		}
+		&-title {
+			&:extend(.font-myriadpro-bold);
+			line-height: 1.1;
+			margin-bottom: 3px;
+		}
+		p {
+			/*font-size: 13px;*/
+			margin-bottom: 0px;
+		}
+		&-href {
+			display: inline-block;
+			position: relative;
+			text-transform: uppercase;
+			line-height: 1.1;
+			color: @black;
+			margin-top: 13px;
+			&:hover {
+				text-decoration: none;
+				&,
+				&:before {
+					color: @red;
+				}
+			}
+			&:before {
+				&:extend(.pseudo);
+				color: @black;
+				border-width: 1px 1px 0px 0px;
+				border-style: solid;
+				top: 2px;
+				width: 8px;
+				height: 8px;
+				transform: rotate(45deg);
+				left: -20px;
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-lg) {
+	.socialnet {
+		&__item {
+			&--left {
+				margin-left: auto;
+			}
+			&--right {
+				margin-right: auto;
+			}
+		}
+	}
+}
+
+@keyframes socialnet-animate-1 {
+    0%   {
+    	opacity: 0.15;
+    }
+    30% {
+    	opacity: 1.0;
+    }
+}
+@keyframes socialnet-animate-2 {
+    0%   {
+    	opacity: 0.15;
+    }
+    15%   {
+    	opacity: 0.15;
+    }
+    45% {
+    	opacity: 1.0;
+    }
+}
+@keyframes socialnet-animate-3 {
+    0%   {
+    	opacity: 0.15;
+    }
+    30%   {
+    	opacity: 0.15;
+    }
+    60% {
+    	opacity: 1.0;
+    }
+}

@@ -1,0 +1,99 @@
+---
+
+---
+
+<div class="authorize js-authorize hidd">
+
+	<div class="container">
+		
+		<div class="authorize__logo">
+			<img src="images/drova-logo-big.png" width="224" height="230" alt="" />
+		</div>
+		<p class="authorize__comment">
+			Для входа на сайт вы должны быть совершеннолетним
+		</p>
+		<p class="authorize__comment authorize__comment--red">
+			Введите дату вашего рождения
+		</p>
+		<div class="authorize__birth">
+			<div class="row">
+				<div class="col-xs-16">
+					<select id="day" class="authorize__day js-day" name="day">
+						<option value="" selected>День</option>
+						{{#repeat 31}}
+							<option value="{{@index}}">{{@index}}</option>
+						{{/repeat}}
+					</select>
+				</div>
+				<div class="col-xs-16">
+					<select id="month" class="authorize__month js-month" name="month">
+						<option value="" selected>Месяц</option>
+						<option value="01">Январь</option>
+						<option value="02">Февраль</option>
+						<option value="03">Март</option>
+						<option value="04">Апрель</option>
+						<option value="05">Май</option>
+						<option value="06">Июнь</option>
+						<option value="07">Июль</option>
+						<option value="08">Август</option>
+						<option value="09">Сентябрь</option>
+						<option value="10">Октябрь</option>
+						<option value="11">Ноябрь</option>
+						<option value="12">Декабрь</option>
+					</select>
+				</div>
+				<div class="col-xs-16">
+					<select id="year" class="authorize__year js-year" name="year">
+						<option value="" selected>Год</option>
+						{{#each years}}
+							<option value="{{@key}}">{{this}}</option>
+						{{/each}}
+					</select>
+				</div>
+			</div>
+			<div class="row authorize__language">
+				<div class="col-xs-14 col-xs-offset-10">
+					<label for="ru"><input id="ru" type="radio" name="lang[]" /><span class="decorate">РУ</span></label>
+				</div>
+				<div class="col-xs-14">
+					<label for="en"><input id="en" type="radio" name="lang[]" /><span class="decorate">EN</span></label>
+				</div>
+			</div>
+			<button class="btn btn-lg footer__form-btn js-authorize-btn">Вход</button>
+		</div>
+		<div class="footer__copyright">
+			<div class="row">
+				<div class="col-xs-48 col-md-16">
+
+					Copyright 2015 ©  EEDC
+
+				</div>
+				<div class="col-xs-48 col-md-32">
+
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">ГЛАВНАЯ</a>
+						</li>
+						<li>
+							<a href="#">БРЕНД</a>
+						</li>
+						<li>
+							<a href="#">КОЛЛЕКЦИЯ</a>
+						</li>
+						<li>
+							<a href="#">ПРОИЗВОДСТВО</a>
+						</li>
+						<li>
+							<a href="#">КОНТАКТЫ</a>
+						</li>
+					</ol>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__notification"></div>
+
+	</div>
+
+</div>

@@ -1,0 +1,61 @@
+<footer class="footer {{#is page.name 'index2'}}footer--beige{{/is}}">
+	<div class="container">
+		
+		<h1 class="footer__title">
+			КОНТАКТЫ
+		</h1>
+		<p class="footer__comment">
+			Для отправки сообщения заполните форму
+		</p>		
+
+		<form class="footer__form" action="#">
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-48 col-md-24 p-r-10">
+						<input class="footer__form-input" name="name" type="text" placeholder="Имя" />
+					</div>
+					<div class="col-xs-48 col-md-24 p-l-10">
+						<input class="footer__form-input required email" name="email" type="text" placeholder="E-mail" />
+					</div>
+				</div>
+				<textarea class="footer__form-textarea required" name="comment" placeholder="Ваше сообщение"></textarea>
+				<button class="btn btn-lg footer__form-btn" type="submit">Отправить</button>
+			</fieldset>
+		</form>
+
+		<div class="footer__copyright">
+			<div class="row">
+				<div class="col-xs-48 col-md-16">
+
+					Copyright 2015 ©  EEDC
+
+				</div>
+				<div class="col-xs-48 col-md-32">
+
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">ГЛАВНАЯ</a>
+						</li>
+						<li>
+							<a href="#">БРЕНД</a>
+						</li>
+						<li>
+							<a href="#">КОЛЛЕКЦИЯ</a>
+						</li>
+						<li>
+							<a href="#">ПРОИЗВОДСТВО</a>
+						</li>
+						<li>
+							<a href="#">КОНТАКТЫ</a>
+						</li>
+					</ol>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__notification"></div>
+
+	</div>
+
+</footer>

@@ -1,0 +1,178 @@
+
+#logo {
+	&,
+	& img {
+		display: block;
+	}
+	& img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.header {
+	background-image: url(../images/drova-640.jpg);
+	background-color: #0a0102;
+	background-position: 50% 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	min-height: 462px;
+	&__fixed {
+		padding-top: 14px;
+		background: transparent;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		left: 0px;
+		transition: margin 0.3s ease-out;
+		z-index: 333;
+		&.unactive {
+			background: @black;
+			position: fixed;
+			top: -100px;
+			margin-top: 0px;
+		}
+		&.active {
+			background: @black;
+			position: fixed;
+			top: -100px;
+			margin-top: 100px;
+		}
+	}
+	&,
+	& * {
+		color: #fff;
+	}
+	&__social {
+		text-align: right;
+		padding-top: 13px;
+		&-href {
+			width: 27px;
+			height: 27px;
+			display: inline-block;
+			line-height: 1.0;
+			border: 3px solid;
+			border-radius: 50%;
+			margin-left: 8px;
+			&:hover {
+				color: @red;
+			}
+			&:first-child {
+				margin-left: 0px;
+			}
+			.icons {
+				margin: -3px 0px 0px -3px;
+			}
+		}
+	}
+	&:after {
+		&:extend(.pseudo);
+		bottom: 0px;
+		right: 32.5%;
+		border-width: 192px 1600px;
+		border-color: transparent transparent #fff #fff;
+	}
+	&:before {
+		&:extend(.pseudo);
+		bottom: 0px;
+		left: 67.5%;
+		border-width: 352px 1600px;
+		border-color: transparent #fff #fff transparent;
+	}
+	&__content {
+		position: absolute;
+		top: 60px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		&-valigner {
+			width: 0px;
+			height: 100%;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&-valign {
+			width: 100%;
+			display: inline-block;
+			vertical-align: middle;	
+		}
+		h3,
+		&-subtitle {
+			&:extend(.h3);
+			letter-spacing: 0.04em;
+			&:extend(.font-myriadpro);
+			line-height: 1.0;
+		}
+		h1,
+		&-title {
+			&:extend(.h2);
+			font-size: 38px;
+			letter-spacing: 0.07em;
+			line-height: 1.0;
+			margin-bottom: 30px;
+		}
+		&-text {
+			max-width: 330px;
+			h1 {
+				&:extend(.h2);
+				line-height: 1.0;
+			}
+			& p {
+				font-size: 18px;
+				&:extend(.font-myriadpro-italic);
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-md) {
+	.header {
+		background-image: url(../images/drova-640.jpg);
+		min-height: 370px;
+		&__content {
+
+			h3,
+			&-subtitle {
+				font-size: 22px;
+				letter-spacing: 0.12em;
+			}
+			h1,
+			&-title {
+				font-size: 32px;
+				letter-spacing: 0.11em;
+				margin-bottom: 15px;
+			}
+			&-text {
+				h1 {
+					/*font-size: 22px;*/
+				}
+				& p {
+					font-size: 16px;
+				}
+			}
+
+		}
+	}
+}
+
+@media (min-width: @screen-md) {
+	.header {
+		background-image: url(../images/drova-980.jpg);
+		min-height: 567px;
+	}
+}
+
+@media (min-width: @screen-lg) {
+	.header {
+		background-image: url(../images/drova-1600.jpg);
+		background-size: contain;
+		min-height: 925px;
+	}
+}
+
+
+@media (max-width: @screen-xs) {
+	background-size: cover;
+}

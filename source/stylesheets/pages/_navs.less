@@ -1,0 +1,41 @@
+
+.navbar-default {
+	background: transparent;
+	z-index: 10;
+	border: 0px none;
+	.navbar-header {
+		border: 0px none;
+	}
+	.navbar-collapse {
+		border: 0px none;
+		box-shadow: none;
+		ul>li>a {
+			text-align: right;
+		}
+	}
+}
+.topnav {
+	padding-top: 20px;
+	& &__item {
+		& a {
+			&:extend(.font-myriadpro-bold);
+			font-size: 13px;
+			text-transform: uppercase;
+			padding: 0px 0px;
+			&,
+			&:hover,
+			&:focus {
+				background: transparent;
+			}
+			&:hover,
+			&:focus {
+				color: @red;
+			}
+		}
+		.active {
+			a {
+				color: @red;
+			}
+		}
+	}
+}

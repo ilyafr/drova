@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Главная страница
+		</title>
+
+		<link rel="stylesheet" href="stylesheets/app.min.css" />
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+		<header class="header js-header page page--black page--1">
+	<div class="header__fixed js-header__fixed">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-20 col-md-14">
+
+					<a id="logo" href=""><img src="images/drova-logo-small.png" width="186" height="66" alt="" /></a>
+
+				</div>
+				<div class="col-xs-28 col-md-27">
+
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav-collapse" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="topnav-collapse">
+
+								<ul class="nav nav-justified topnav">
+									<li class="topnav__item active">
+										<a href="#page--2">Бренд</a>
+									</li>
+									<li class="topnav__item">
+										<a href="#page--4">Коллекция</a>
+									</li>
+									<li class="topnav__item">
+										<a href="#page--5">Производство</a>
+									</li>
+									<li class="topnav__item">
+										<a href="#page--6">Контакты</a>
+									</li>
+								</ul>			
+							</div>
+
+						</div>
+					</nav>
+
+				</div>
+				<div class="col-xs-48 col-md-7 visible-lg-block">
+
+					<aside class="header__social">
+						<a class="header__social-href" href=""><i class="icons icons--facebook"></i></a><a class="header__social-href" href=""><i class="icons icons--google-plus"></i></a><a class="header__social-href" href=""><i class="icons icons--rss"></i></a>
+					</aside>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__content"><i class="header__content-valigner"></i><div class="header__content-valign">
+		<div class="container">
+			<div class="col-xs-48 col-md-36 col-lg-24 header__content-text">
+				<h3 class="header__content-subtitle">
+					Экологически чистая
+				</h3>
+				<h1 class="header__content-title">
+					Русская водка
+				</h1>
+				<p>
+					Натуральные ингредиенты  и уникальные 
+					системы очистки  позволяют достичь 
+					совершенного  качества.
+				</p>
+			</div>
+		</div>
+	</div></div>
+</header>
+		
+		<div class="content">
+
+			
+
+
+
+<div class="authorize js-authorize hidd">
+
+	<div class="container">
+		
+		<div class="authorize__logo">
+			<img src="images/drova-logo-big.png" width="224" height="230" alt="" />
+		</div>
+		<p class="authorize__comment">
+			Для входа на сайт вы должны быть совершеннолетним
+		</p>
+		<p class="authorize__comment authorize__comment--red">
+			Введите дату вашего рождения
+		</p>
+		<div class="authorize__birth">
+			<div class="row">
+				<div class="col-xs-16">
+					<select id="day" class="authorize__day js-day" name="day">
+						<option value="" selected>День</option>
+						
+							<option value="01">01</option>
+						
+							<option value="02">02</option>
+						
+							<option value="03">03</option>
+						
+							<option value="04">04</option>
+						
+							<option value="05">05</option>
+						
+							<option value="06">06</option>
+						
+							<option value="07">07</option>
+						
+							<option value="08">08</option>
+						
+							<option value="09">09</option>
+						
+							<option value="10">10</option>
+						
+							<option value="11">11</option>
+						
+							<option value="12">12</option>
+						
+							<option value="13">13</option>
+						
+							<option value="14">14</option>
+						
+							<option value="15">15</option>
+						
+							<option value="16">16</option>
+						
+							<option value="17">17</option>
+						
+							<option value="18">18</option>
+						
+							<option value="19">19</option>
+						
+							<option value="20">20</option>
+						
+							<option value="21">21</option>
+						
+							<option value="22">22</option>
+						
+							<option value="23">23</option>
+						
+							<option value="24">24</option>
+						
+							<option value="25">25</option>
+						
+							<option value="26">26</option>
+						
+							<option value="27">27</option>
+						
+							<option value="28">28</option>
+						
+							<option value="29">29</option>
+						
+							<option value="30">30</option>
+						
+							<option value="31">31</option>
+						
+					</select>
+				</div>
+				<div class="col-xs-16">
+					<select id="month" class="authorize__month js-month" name="month">
+						<option value="" selected>Месяц</option>
+						<option value="01">Январь</option>
+						<option value="02">Февраль</option>
+						<option value="03">Март</option>
+						<option value="04">Апрель</option>
+						<option value="05">Май</option>
+						<option value="06">Июнь</option>
+						<option value="07">Июль</option>
+						<option value="08">Август</option>
+						<option value="09">Сентябрь</option>
+						<option value="10">Октябрь</option>
+						<option value="11">Ноябрь</option>
+						<option value="12">Декабрь</option>
+					</select>
+				</div>
+				<div class="col-xs-16">
+					<select id="year" class="authorize__year js-year" name="year">
+						<option value="" selected>Год</option>
+						
+							<option value="1920">1920</option>
+						
+							<option value="1921">1921</option>
+						
+							<option value="1922">1922</option>
+						
+							<option value="1923">1923</option>
+						
+							<option value="1924">1924</option>
+						
+							<option value="1925">1925</option>
+						
+							<option value="1926">1926</option>
+						
+							<option value="1927">1927</option>
+						
+							<option value="1928">1928</option>
+						
+							<option value="1929">1929</option>
+						
+							<option value="1930">1930</option>
+						
+							<option value="1931">1931</option>
+						
+							<option value="1932">1932</option>
+						
+							<option value="1933">1933</option>
+						
+							<option value="1934">1934</option>
+						
+							<option value="1935">1935</option>
+						
+							<option value="1936">1936</option>
+						
+							<option value="1937">1937</option>
+						
+							<option value="1938">1938</option>
+						
+							<option value="1939">1939</option>
+						
+							<option value="1940">1940</option>
+						
+							<option value="1941">1941</option>
+						
+							<option value="1942">1942</option>
+						
+							<option value="1943">1943</option>
+						
+							<option value="1944">1944</option>
+						
+							<option value="1945">1945</option>
+						
+							<option value="1946">1946</option>
+						
+							<option value="1947">1947</option>
+						
+							<option value="1948">1948</option>
+						
+							<option value="1949">1949</option>
+						
+							<option value="1950">1950</option>
+						
+							<option value="1951">1951</option>
+						
+							<option value="1952">1952</option>
+						
+							<option value="1953">1953</option>
+						
+							<option value="1954">1954</option>
+						
+							<option value="1955">1955</option>
+						
+							<option value="1956">1956</option>
+						
+							<option value="1957">1957</option>
+						
+							<option value="1958">1958</option>
+						
+							<option value="1959">1959</option>
+						
+							<option value="1960">1960</option>
+						
+							<option value="1961">1961</option>
+						
+							<option value="1962">1962</option>
+						
+							<option value="1963">1963</option>
+						
+							<option value="1964">1964</option>
+						
+							<option value="1965">1965</option>
+						
+							<option value="1966">1966</option>
+						
+							<option value="1967">1967</option>
+						
+							<option value="1968">1968</option>
+						
+							<option value="1969">1969</option>
+						
+							<option value="1970">1970</option>
+						
+							<option value="1971">1971</option>
+						
+							<option value="1972">1972</option>
+						
+							<option value="1973">1973</option>
+						
+							<option value="1974">1974</option>
+						
+							<option value="1975">1975</option>
+						
+							<option value="1976">1976</option>
+						
+							<option value="1977">1977</option>
+						
+							<option value="1978">1978</option>
+						
+							<option value="1979">1979</option>
+						
+							<option value="1980">1980</option>
+						
+							<option value="1981">1981</option>
+						
+							<option value="1982">1982</option>
+						
+							<option value="1983">1983</option>
+						
+							<option value="1984">1984</option>
+						
+							<option value="1985">1985</option>
+						
+							<option value="1986">1986</option>
+						
+							<option value="1987">1987</option>
+						
+							<option value="1988">1988</option>
+						
+							<option value="1989">1989</option>
+						
+							<option value="1990">1990</option>
+						
+							<option value="1991">1991</option>
+						
+							<option value="1992">1992</option>
+						
+							<option value="1993">1993</option>
+						
+							<option value="1994">1994</option>
+						
+							<option value="1995">1995</option>
+						
+							<option value="1996">1996</option>
+						
+							<option value="1997">1997</option>
+						
+							<option value="1998">1998</option>
+						
+							<option value="1999">1999</option>
+						
+							<option value="2000">2000</option>
+						
+					</select>
+				</div>
+			</div>
+			<div class="row authorize__language">
+				<div class="col-xs-14 col-xs-offset-10">
+					<label for="ru"><input id="ru" type="radio" name="lang[]" /><span class="decorate">РУ</span></label>
+				</div>
+				<div class="col-xs-14">
+					<label for="en"><input id="en" type="radio" name="lang[]" /><span class="decorate">EN</span></label>
+				</div>
+			</div>
+			<button class="btn btn-lg footer__form-btn js-authorize-btn">Вход</button>
+		</div>
+		<div class="footer__copyright">
+			<div class="row">
+				<div class="col-xs-48 col-md-16">
+
+					Copyright 2015 ©  EEDC
+
+				</div>
+				<div class="col-xs-48 col-md-32">
+
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">ГЛАВНАЯ</a>
+						</li>
+						<li>
+							<a href="#">БРЕНД</a>
+						</li>
+						<li>
+							<a href="#">КОЛЛЕКЦИЯ</a>
+						</li>
+						<li>
+							<a href="#">ПРОИЗВОДСТВО</a>
+						</li>
+						<li>
+							<a href="#">КОНТАКТЫ</a>
+						</li>
+					</ol>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__notification"></div>
+
+	</div>
+
+</div>
+
+<div class="brend page page--white page--2 js-page--2">
+<a name="page--2"></a>
+	<div class="brend__angle">
+		<div class="container">
+
+			<h2 class="brend__title">
+				БРЕНД DROVA
+			</h2>
+			<div class="brend__text">
+				<p>
+					Испокон веков дрова использовались людьми повсеместно. Не только как строительный материал, но и в качестве натурального и экологически чистого источника энергии для обогрева жилья и приготовления пищи. Слово «дрова» настолько плотно вошли в нашу повседневную жизнь, что стали обязательным атрибутом русского фольклора, найдя свое отражение в сказках, пословицах и поговорках. «Чай пить – не дрова рубить», гласит народная мудрость, явно намекая, что заготовка дров – серьезный труд под силу только настоящему, уверенному в себе мужчине. И хотя для сегодняшнего городского жителя дрова больше не являются основой жизни, мало кто знает, что дровяные угли являются лучшим очистителем для изготовления высококлассной водки.
+				</p>
+				<p>
+					Водка Drova – великолепный образец современного отношения к традициям приготовления настоящей водки на русских углях. Народный опыт, современные технологии и бережное отношение к природе позволили нам создать совершенный продукт – водку Drova.
+				</p>
+			</div>
+			<p class="brend__btns">
+				<button class="btn btn-lg btn-border">подробнее</button>
+			</p>
+
+		</div>
+	</div>
+</div>
+
+<div class="filtering page page--white page--3 js-page--3">
+<a name="page--3"></a>
+	<div class="filtering__angle">
+		<div class="container">
+
+			<h2 class="filtering__title">
+				УГОЛЬНАЯ ФИЛЬтРАЦИЯ
+			</h2>
+			<div class="filtering__text">
+				<p>
+					Оригинальный вкус и аромат водки Drova во многом определяются уникальной системой угольной фильтрации, используемой при ее производстве. Для получения готового продукта водно-спиртовая смесь динамически пропускается через три колонны заполненных активным углем с развитой внутренней структурой. В процесс угольной фильтрации запускается процесс окислительно-восстановительных реакций этилового спирта, в результате которых уходит резкий вкус и запах спирта, и появляется характерный для водки Drova водочный вкус и аромат.
+				</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="collection page page--white page--4 js-page--4">
+<a name="page--4"></a>
+	<div class="container">
+
+		<h2 class="collection__title">
+			КОЛЛЕКЦИЯ
+		</h2>
+		<div class="collection__text">
+			<p>
+				Общество с ограниченной ответственностью «Восточно-Европейская Дистрибьюторская Компания» (ООО «ВЕДК») является одним из ярких лидеров российского рынка алкогольной продукции. Высокий статус компании подтверждает успешная комплексная работа с торговыми марками Stolichnaya, Moskovskaya, Путинка, Советское шампанское и другими известными алкогольными брендами.
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-xs-48 col-md-16">
+
+				<div class="collection__item collection__item--1">
+					<a class="collection__item-img" href="images/drova/drova_oak_charcoal.png" target="_blank">
+						<img src="images/catalog/oak.png" width="380" height="600" alt="" />
+						<span class="collection__item-img-download">Скачать</span>
+					</a>
+					<a class="collection__item-title" href="">
+						ОЧИЩЕНА ДУБОВЫМ УГЛЁМ
+					</a>
+					<p>
+						Фильтрация крепким дубовым углем придает водке Drova приятный, чуть - чуть терпкий вкус. Водка для брутальных и духовно богатых мужчин.
+					</p>
+				</div>
+
+			</div>
+			<div class="col-xs-48 col-md-16">
+
+				<div class="collection__item collection__item--2">
+					<a class="collection__item-img" href="images/drova/drova_birch_charcoal.png" target="_blank">
+						<img src="images/catalog/birch.png" width="380" height="600" alt="" />
+						<span class="collection__item-img-download">Скачать</span>
+					</a>
+					<a class="collection__item-title" href="">
+						ОЧИЩЕНА БЕРЁЗОВЫМ УГЛЁМ
+					</a>
+					<p>
+						Водка Drova, прошедшая фильтрацию лесным березовым углем – это самый верный способ для гурманов получить истинное наслаждение от великолепного вкуса чистой русской водки.
+					</p>
+				</div>
+				
+			</div>
+			<div class="col-xs-48 col-md-16">
+
+				<div class="collection__item collection__item--3">
+					<a class="collection__item-img" href="images/drova/drova_nut_charcoal.png" target="_blank">
+						<img src="images/catalog/nut.png" width="380" height="600" alt="" />
+						<span class="collection__item-img-download">Скачать</span>
+					</a>
+					<a class="collection__item-title" href="">
+						ОЧИЩЕНА ОРЕХОВЫМ УГЛЁМ
+					</a>
+					<p>
+						Вкус водки Drova, фильтрованной ореховым углем, более округлый и мягкий. Пьется легко в любой компании, но, к сожалению быстро заканчивается.
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<p class="text-center">
+			<button class="btn btn-lg btn-border">подробнее</button>
+		</p>
+
+	</div>
+</div>
+
+<div class="production production--page-footer page page--white page--5 js-page--5">
+<a name="page--5"></a>
+	<div class="production__angle">
+		<div class="container">
+
+			<h2 class="production__title">
+				ПРОИЗВОДСТВО
+			</h2>
+			<h3 class="production__subtitle">
+				Как мы производим водку Drova
+			</h3>
+			<div class="production__text">
+				<p>
+					Водка Drova производится на основе экологически чистых ингредиентов 
+					по классической технологии, состоящей из следующих стадий:
+				</p>
+			</div>
+			<div class="row production__overflow">
+				<div class="col-xs-48 col-md-5 row-eq-height">
+
+					<div class="production__item production__item--1 production__item--first">
+						<a class="production__item-img" href="">
+							<img src="images/production/water-preparation.png" width="130" height="210" alt="" />
+						</a>
+						<a class="production__item-name production__item-name--1" href="">
+							ПОДГОТОВКА ВОДЫ
+						</a>
+						<span class="production__item-num production__item-num--1">1</span>
+						<div class="production__item-text">
+							<p>
+								Для производства водки <strong>Drova</strong> используется только вода из артезианских источников. Поступающая из скважины живительная влага проходит натрий-катионовое умягчение и пропускается через установку обратного осмоса. Сложный процесс фильтрации избавляет воду от примесей и делает её по-настоящему вкусной. 
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-48 col-md-5 row-eq-height">
+
+					<div class="production__item production__item--2">
+						<a class="production__item-img" href="">
+							<img src="images/production/alcohol-preparation.png" width="130" height="210" alt="" />
+						</a>
+						<a class="production__item-name production__item-name--2" href="">
+							ПОДГОТОВКА ВОДНО-СПИРТОВОГО РАСТВОРА
+						</a>
+						<span class="production__item-num production__item-num--2">2</span>
+						<div class="production__item-text">
+							<p>
+								Подготовленная вода смешивается периодическим способом со спиртом высочайшего качества, произведенным в Центрально-Черноземной зоне России из экологически чистого зерна. Сначала в сортировочный чан поступает спирт, а затем вода, что позволяет равномерно перемешать жидкости и добиться золотой пропорции.
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-48 col-md-5 row-eq-height">
+
+					<div class="production__item production__item--3">
+						<a class="production__item-img" href="">
+							<img src="images/production/filtration.png" width="130" height="210" alt="" />
+						</a>
+						<a class="production__item-name production__item-name--3" href="">
+							ФИЛЬТРАЦИЯ
+						</a>
+						<span class="production__item-num production__item-num--3">3</span>
+						<div class="production__item-text">
+							<p>
+								Для получения особого вкуса и аромата водки <strong>Drova</strong> водно-спиртовая смесь проходит через сложную систему фильтров. Первичная очистка кварцевым песком продолжается угольной фильтрацией, а затем очищается до максимально прозрачного цвета. При этом все виды водки в линейке очищаются разными видами угля. 
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-48 col-md-5 row-eq-height">
+
+					<div class="production__item production__item--4">
+						<a class="production__item-img" href="">
+							<img src="images/production/preparation.png" width="130" height="210" alt="" />
+						</a>
+						<a class="production__item-name production__item-name--4" href="">
+							ПОДГОТОВКА И ВНЕСЕНИЕ ИНГРЕДИЕНТОВ
+						</a>
+						<span class="production__item-num production__item-num--4">4</span>
+						<div class="production__item-text">
+							<p>
+								Согласно сложной рецептуре, во все продукты линейки в небольших количествах добавляются сахарный сироп и мед, березовый сок — в <strong>Drova</strong>, очищенные березовым углем, настой коры дуба — в <strong>Drova</strong>, очищенные дубовым углем, и настой грецкого ореха — в <strong>Drova</strong>, очищенные ореховым углем. Так рождается водка <strong>Drova</strong>.
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-48 col-md-5 row-eq-height">
+
+					<div class="production__item production__item--5">
+						<a class="production__item-img" href="">
+							<img src="images/production/bottle.png" width="130" height="210" alt="" />
+						</a>
+						<a class="production__item-name production__item-name--5" href="">
+							РОЗЛИВ ПО БУТЫЛКАМ, ОФОРМЛЕНИЕ И УПАКОВКА
+						</a>
+						<span class="production__item-num production__item-num--5">5</span>
+						<div class="production__item-text">
+							<p>
+								Перед розливом водка <strong>Drova</strong> проходит контрольную «полировочную» фильтрацию, после чего происходит разлив по бутылкам, их укупорка характерным для водки <strong>Drova</strong> изящным колпаком камю и упаковка в коробки. Теперь экологически чистая и современная водка <strong>Drova</strong> готова попасть на стол миллионов россиян.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<p class="production__btns">
+				<button class="btn btn-lg btn-border">подробнее</button>
+			</p>
+
+		</div>
+	</div>
+</div>
+
+
+
+		
+		</div>
+
+		<footer class="footer footer--beige">
+	<div class="container">
+		
+		<h1 class="footer__title">
+			КОНТАКТЫ
+		</h1>
+		<p class="footer__comment">
+			Для отправки сообщения заполните форму
+		</p>		
+
+		<form class="footer__form" action="#">
+			<fieldset>
+				<div class="row">
+					<div class="col-xs-48 col-md-24 p-r-10">
+						<input class="footer__form-input" name="name" type="text" placeholder="Имя" />
+					</div>
+					<div class="col-xs-48 col-md-24 p-l-10">
+						<input class="footer__form-input required email" name="email" type="text" placeholder="E-mail" />
+					</div>
+				</div>
+				<textarea class="footer__form-textarea required" name="comment" placeholder="Ваше сообщение"></textarea>
+				<button class="btn btn-lg footer__form-btn" type="submit">Отправить</button>
+			</fieldset>
+		</form>
+
+		<div class="footer__copyright">
+			<div class="row">
+				<div class="col-xs-48 col-md-16">
+
+					Copyright 2015 ©  EEDC
+
+				</div>
+				<div class="col-xs-48 col-md-32">
+
+					<ol class="breadcrumb">
+						<li>
+							<a href="#">ГЛАВНАЯ</a>
+						</li>
+						<li>
+							<a href="#">БРЕНД</a>
+						</li>
+						<li>
+							<a href="#">КОЛЛЕКЦИЯ</a>
+						</li>
+						<li>
+							<a href="#">ПРОИЗВОДСТВО</a>
+						</li>
+						<li>
+							<a href="#">КОНТАКТЫ</a>
+						</li>
+					</ol>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__notification"></div>
+
+	</div>
+
+</footer>
+
+				
+<script src="javascripts/libs.min.js"></script>
+<script src="javascripts/app.min.js"></script>
+
+	</body>
+</html>

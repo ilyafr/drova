@@ -1,0 +1,102 @@
+
+.filtering {
+	background-image: url(../images/coal-1600.jpg);
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	padding: 120px 0px 118px;
+	h2,
+	&__title {
+		&:extend(.h1);
+		text-align: center;
+		margin-bottom: 35px;
+		position: relative;
+		opacity: .10;
+		transition: opacity 1.5s;
+	}
+	&__text {
+		max-width: 860px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		opacity: .10;
+		transition: opacity 1.5s;
+		&,
+		& p {
+			&:extend(.font-myriadpro-italic);
+			font-size: 19px;
+			line-height: 1.56;
+		}
+	}
+	&.active {
+		.filtering__title {
+			opacity: 1.0;
+		}
+		.filtering__text {
+			opacity: 1.0;
+		}
+	}
+	&,
+	& a {
+		color: @white;
+	}
+	&:before {
+		&:extend(.pseudo);
+		border-width: 352px 1600px;
+		top: 0px;
+		right: 67%;
+		bottom: auto;
+		left: auto;
+		border-color: #fff transparent transparent #fff;
+	}
+	&:after {
+		&:extend(.pseudo);
+		border-width: 176px 1600px;
+		top: 0px;
+		left: 33%;
+		bottom: auto;
+		right: auto;
+		border-color: #fff #fff transparent transparent;
+	}
+	&__angle {
+		padding: 40px 0px;
+		&:before {
+			&:extend(.pseudo);
+			right: 33%;
+			bottom: 0px;
+			top: auto;
+			left: auto;
+			border-width: 176px 1600px;
+			border-color: transparent transparent #fff #fff;
+		}
+		&:after {
+			&:extend(.pseudo);
+			left: 67%;
+			bottom: 0px;
+			top: auto;
+			right: auto;
+			border-width: 352px 1600px;
+			border-color: transparent #fff #fff transparent;
+		}
+	}
+}
+
+@media (max-width: @screen-md) {
+	.filtering {
+		background-image: url(../images/coal-640.jpg);
+	}
+}
+
+@media (min-width: @screen-md) {
+	.filtering {
+		background-image: url(../images/coal-980.jpg);
+	}
+}
+
+@media (min-width: @screen-lg) {
+	.filtering {
+		background-image: url(../images/coal-1600.jpg);
+	}
+}

@@ -1,0 +1,136 @@
+/* Web font
+   ========================================================================== */
+
+@font-face {
+    font-family: 'myriadpro_bold';
+    src: url('../fonts/myriad-pro-bold/myriadpro-bold.eot');
+    src: url('../fonts/myriad-pro-bold/myriadpro-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriad-pro-bold/myriadpro-bold.woff2') format('woff2'),
+         url('../fonts/myriad-pro-bold/myriadpro-bold.woff') format('woff'),
+         url('../fonts/myriad-pro-bold/myriadpro-bold.ttf') format('truetype'),
+         url('../fonts/myriad-pro-bold/myriadpro-bold.svg#MyriadPro-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriadpro_regular';
+    src: url('../fonts/myriad-pro-regular/myriadpro-regular.eot');
+    src: url('../fonts/myriad-pro-regular/myriadpro-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriad-pro-regular/myriadpro-regular.woff2') format('woff2'),
+         url('../fonts/myriad-pro-regular/myriadpro-regular.woff') format('woff'),
+         url('../fonts/myriad-pro-regular/myriadpro-regular.ttf') format('truetype'),
+         url('../fonts/myriad-pro-regular/myriadpro-regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriadpro_semibold';
+    src: url('../fonts/myriad-pro-semibold/myriadpro-semibold.eot');
+    src: url('../fonts/myriad-pro-semibold/myriadpro-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriad-pro-semibold/myriadpro-semibold.woff2') format('woff2'),
+         url('../fonts/myriad-pro-semibold/myriadpro-semibold.woff') format('woff'),
+         url('../fonts/myriad-pro-semibold/myriadpro-semibold.ttf') format('truetype'),
+         url('../fonts/myriad-pro-semibold/myriadpro-semibold.svg#MyriadPro-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'myriadpro_italic';
+    src: url('../fonts/myriad-pro-italic/myriad-pro-italic.eot');
+    src: url('../fonts/myriad-pro-italic/myriad-pro-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriad-pro-italic/myriad-pro-italic.woff2') format('woff2'),
+         url('../fonts/myriad-pro-italic/myriad-pro-italic.woff') format('woff'),
+         url('../fonts/myriad-pro-italic/myriad-pro-italic.ttf') format('truetype'),
+         url('../fonts/myriad-pro-italic/myriad-pro-italic.svg#MyriadPro-It') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'myriadpro_bold_italic';
+    src: url('../fonts/myriad-pro-bold-italic/myriad-pro-bold-italic.eot');
+    src: url('../fonts/myriad-pro-bold-italic/myriad-pro-bold-italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/myriad-pro-bold-italic/myriad-pro-bold-italic.woff2') format('woff2'),
+         url('../fonts/myriad-pro-bold-italic/myriad-pro-bold-italic.woff') format('woff'),
+         url('../fonts/myriad-pro-bold-italic/myriad-pro-bold-italic.ttf') format('truetype'),
+         url('../fonts/myriad-pro-bold-italic/myriad-pro-bold-italic.svg#MyriadPro-BoldIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Variables
+   ========================================================================== */
+
+.font-myriadpro {
+    font-family: 'myriadpro_regular';
+}
+.font-myriadpro-bold {
+    font-family: 'myriadpro_bold';
+}
+.font-myriadpro-semibold {
+    font-family: 'myriadpro_semibold';
+}
+.font-myriadpro-italic {
+    font-family: 'myriadpro_italic';
+}
+.font-myriadpro-bold-italic {
+    font-family: 'myriadpro_bold_italic';
+}
+
+body {
+	font-family: 'myriadpro_regular', 'Tinos', serif;
+	position: relative;
+}
+b,strong {
+	font-family: 'myriadpro_semibold', 'Tinos', serif;
+	font-weight: normal;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,h5,.h6 {
+    line-height: 1.1;
+    &:extend(.uppercase);
+    margin: 0px 0px 10px;
+}
+h1,
+.h1 {
+    font-size: 42px;
+    &:extend(.font-myriadpro-bold);
+}
+h2,
+.h2 {
+    font-size: 37px;
+    &:extend(.font-myriadpro-bold);
+}
+h3,
+.h3 {
+    font-size: 28px;
+}
+h4,
+.h4 {
+    font-size: 24px;
+}
+h5,
+.h5 {
+    font-size: 20px;
+}
+h6,
+.h6 {
+    font-size: 16px;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+}
+a {
+	/*color: #24649f;*/
+}
+p {
+	margin: 0px 0px 20px;
+}

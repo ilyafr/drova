@@ -1,0 +1,140 @@
+
+.footer {
+	background-color: #0e090a;
+	padding: 140px 0px 30px;
+	color: @white;
+	position: relative;
+	overflow: hidden;
+	&:before {
+		&:extend(.pseudo);
+		border-width: 176px 1600px;
+		top: 0px;
+		right: 33%;
+		bottom: auto;
+		left: auto;
+		border-color: #fff transparent transparent #fff;
+	}
+	&:after {
+		&:extend(.pseudo);
+		border-width: 352px 1600px;
+		top: 0px;
+		left: 67%;
+		bottom: auto;
+		right: auto;
+		border-color: #fff #fff transparent transparent;
+	}
+	&--beige {
+		&:before {
+			border-color: @beige transparent transparent @beige;
+		}
+		&:after {
+			border-color: @beige @beige transparent transparent;
+		}
+	}
+	&__title {
+		&:extend(.font-myriadpro-bold);
+		font-size: 42px;
+		margin-bottom: 35px;
+		text-align: center;
+	}
+	&__comment {
+		&:extend(.font-myriadpro-italic);
+		font-size: 18px;
+		line-height: 1.1;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	&__form {
+		max-width: 460px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 25px;
+		&-input,
+		&-textarea {
+			background: transparent;
+			border: 1px solid #9f9d9d;
+			color: @white;
+			width: 100%;
+			font-size: 16px;
+			&:focus {
+				border-color: @white;
+			}
+			&.error {
+				border-color: @red;
+			}
+		}
+		&-input {
+			margin-bottom: 18px;
+			height: 45px;
+			padding: 8px 20px;
+		}
+		&-textarea {
+			margin-bottom: 30px;
+			height: 125px;
+			padding: 8px 20px;
+			display: block;
+		}
+		&-btn {
+			display: block;
+			width: 100%;
+			max-width: 310px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&__copyright {
+		border-top: 1px solid;
+		&:extend(.clearfix);
+		font-size: 12px;
+		line-height: 1.1;
+		padding: 18px 0px;
+		&,
+		& a {
+			color: #808080;
+		}
+	}
+	&__notification {
+		background-image: url(../images/notification-1600.png);
+		background-color: transparent;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		height: 96px;
+	}
+}
+
+@media (max-width: @screen-md) {
+	.footer {
+		&__notification {
+			background-image: url(../images/notification-640.png);
+			background-size: contain;
+			height: 52px;
+		}
+		.p-r-10 {
+			padding-right: 0px!important;
+		}
+		.p-l-10 {
+			padding-left: 0px!important;
+		}
+		.breadcrumb {
+			text-align: left;
+		}
+	}
+}
+
+@media (min-width: @screen-md) {
+	.footer {
+		&__notification {
+			background-image: url(../images/notification-980.png);
+			height: 80px;
+		}
+	}
+}
+
+@media (min-width: @screen-lg) {
+	.footer {
+		&__notification {
+			background-image: url(../images/notification-1600.png);
+			height: 96px;
+		}
+	}
+}
